@@ -24,123 +24,123 @@ public class newJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel2 = new javax.swing.JPanel();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
+        grandePainel = new javax.swing.JPanel();
+        painelTitulo = new javax.swing.JPanel();
+        labelTitulo = new javax.swing.JLabel();
+        areaVivosMortos = new javax.swing.JPanel();
+        labelNumPessoas = new javax.swing.JLabel();
+        labelIntervaloMorte = new javax.swing.JLabel();
+        labelTempoEspera = new javax.swing.JLabel();
+        botaoIniciar = new javax.swing.JButton();
+        botaoRecomecar = new javax.swing.JButton();
+        inputNumPessoas = new javax.swing.JTextField();
+        inputIntervaloMorte = new javax.swing.JTextField();
+        inputTempoEspera = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setBackground(new java.awt.Color(223, 230, 233));
+        grandePainel.setBackground(new java.awt.Color(223, 230, 233));
 
-        jPanel1.setBackground(new java.awt.Color(87, 101, 116));
+        painelTitulo.setBackground(new java.awt.Color(87, 101, 116));
 
-        jLabel1.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(223, 230, 233));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("JOSEPHUS");
+        labelTitulo.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
+        labelTitulo.setForeground(new java.awt.Color(223, 230, 233));
+        labelTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelTitulo.setText("JOSEPHUS");
 
-        org.jdesktop.layout.GroupLayout jPanel1Layout = new org.jdesktop.layout.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel1Layout.createSequentialGroup()
+        org.jdesktop.layout.GroupLayout painelTituloLayout = new org.jdesktop.layout.GroupLayout(painelTitulo);
+        painelTitulo.setLayout(painelTituloLayout);
+        painelTituloLayout.setHorizontalGroup(
+            painelTituloLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(painelTituloLayout.createSequentialGroup()
                 .add(140, 140, 140)
-                .add(jLabel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(labelTitulo, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .add(140, 140, 140))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel1Layout.createSequentialGroup()
+        painelTituloLayout.setVerticalGroup(
+            painelTituloLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(painelTituloLayout.createSequentialGroup()
                 .add(22, 22, 22)
-                .add(jLabel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(labelTitulo, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .add(22, 22, 22))
         );
 
-        jPanel3.setBorder(new javax.swing.border.MatteBorder(null));
+        areaVivosMortos.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        org.jdesktop.layout.GroupLayout jPanel3Layout = new org.jdesktop.layout.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+        org.jdesktop.layout.GroupLayout areaVivosMortosLayout = new org.jdesktop.layout.GroupLayout(areaVivosMortos);
+        areaVivosMortos.setLayout(areaVivosMortosLayout);
+        areaVivosMortosLayout.setHorizontalGroup(
+            areaVivosMortosLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(0, 0, Short.MAX_VALUE)
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(0, 247, Short.MAX_VALUE)
+        areaVivosMortosLayout.setVerticalGroup(
+            areaVivosMortosLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(0, 251, Short.MAX_VALUE)
         );
 
-        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
-        jLabel2.setText("Numero de Pessoas");
+        labelNumPessoas.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        labelNumPessoas.setText("Numero de Pessoas");
 
-        jLabel3.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
-        jLabel3.setText("Intervalo de morte");
+        labelIntervaloMorte.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        labelIntervaloMorte.setText("Intervalo de morte");
 
-        jLabel4.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
-        jLabel4.setText("Tempo de espera");
+        labelTempoEspera.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        labelTempoEspera.setText("Tempo de espera");
 
-        jButton1.setText("Iniciar");
+        botaoIniciar.setText("Iniciar");
 
-        jButton2.setText("Recomecar");
+        botaoRecomecar.setText("Recomecar");
 
-        org.jdesktop.layout.GroupLayout jPanel2Layout = new org.jdesktop.layout.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .add(jPanel2Layout.createSequentialGroup()
+        org.jdesktop.layout.GroupLayout grandePainelLayout = new org.jdesktop.layout.GroupLayout(grandePainel);
+        grandePainel.setLayout(grandePainelLayout);
+        grandePainelLayout.setHorizontalGroup(
+            grandePainelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, painelTitulo, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .add(grandePainelLayout.createSequentialGroup()
                 .add(33, 33, 33)
-                .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                        .add(jPanel3, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .add(jPanel2Layout.createSequentialGroup()
-                            .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                                .add(jLabel2)
-                                .add(jTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 60, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(grandePainelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(grandePainelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
+                        .add(areaVivosMortos, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .add(grandePainelLayout.createSequentialGroup()
+                            .add(grandePainelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                                .add(labelNumPessoas)
+                                .add(inputNumPessoas, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 60, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                             .add(114, 114, 114)
-                            .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                                .add(jLabel3)
-                                .add(jTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 60, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                            .add(grandePainelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                                .add(labelIntervaloMorte)
+                                .add(inputIntervaloMorte, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 60, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                             .add(114, 114, 114)
-                            .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                                .add(jLabel4)
-                                .add(jTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 60, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))
-                    .add(jPanel2Layout.createSequentialGroup()
-                        .add(jButton1)
+                            .add(grandePainelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                                .add(labelTempoEspera)
+                                .add(inputTempoEspera, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 60, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))
+                    .add(grandePainelLayout.createSequentialGroup()
+                        .add(botaoIniciar)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jButton2)))
+                        .add(botaoRecomecar)))
                 .addContainerGap(33, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel2Layout.createSequentialGroup()
-                .add(jPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 22, Short.MAX_VALUE)
-                .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                        .add(jLabel3)
-                        .add(jLabel4))
-                    .add(jLabel2))
+        grandePainelLayout.setVerticalGroup(
+            grandePainelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(grandePainelLayout.createSequentialGroup()
+                .add(painelTitulo, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 18, Short.MAX_VALUE)
+                .add(grandePainelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(grandePainelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                        .add(labelIntervaloMorte)
+                        .add(labelTempoEspera))
+                    .add(labelNumPessoas))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                        .add(jTextField1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .add(jTextField2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                    .add(jTextField3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(grandePainelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(grandePainelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                        .add(inputNumPessoas, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(inputIntervaloMorte, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(inputTempoEspera, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .add(21, 21, 21)
-                .add(jPanel3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(areaVivosMortos, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .add(18, 18, 18)
-                .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jButton1)
-                    .add(jButton2))
+                .add(grandePainelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(botaoIniciar)
+                    .add(botaoRecomecar))
                 .add(30, 30, 30))
         );
 
@@ -148,11 +148,11 @@ public class newJFrame extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .add(grandePainel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .add(grandePainel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -194,18 +194,18 @@ public class newJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
+    private javax.swing.JPanel areaVivosMortos;
+    private javax.swing.JButton botaoIniciar;
+    private javax.swing.JButton botaoRecomecar;
+    private javax.swing.JPanel grandePainel;
+    private javax.swing.JTextField inputIntervaloMorte;
+    private javax.swing.JTextField inputNumPessoas;
+    private javax.swing.JTextField inputTempoEspera;
+    private javax.swing.JLabel labelIntervaloMorte;
+    private javax.swing.JLabel labelNumPessoas;
+    private javax.swing.JLabel labelTempoEspera;
+    private javax.swing.JLabel labelTitulo;
+    private javax.swing.JPanel painelTitulo;
     // End of variables declaration//GEN-END:variables
 
 }
