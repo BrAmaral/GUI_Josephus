@@ -1,12 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+import Josephus.*;
+
 
 /**
  *
- * @author user
+ * @author Breno Goes do Amaral
  */
 public class newJFrame extends javax.swing.JFrame {
 
@@ -23,22 +20,16 @@ public class newJFrame extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-        java.awt.GridBagConstraints gridBagConstraints;
 
         grandePainel = new javax.swing.JPanel();
         painelTitulo = new javax.swing.JPanel();
         labelTitulo = new javax.swing.JLabel();
         areaVivosMortos = new javax.swing.JPanel();
-        caraVivo = new javax.swing.JPanel();
-        numeroVivo = new javax.swing.JLabel();
         labelNumPessoas = new javax.swing.JLabel();
         labelIntervaloMorte = new javax.swing.JLabel();
-        labelTempoEspera = new javax.swing.JLabel();
         botaoIniciar = new javax.swing.JButton();
-        botaoRecomecar = new javax.swing.JButton();
         inputNumPessoas = new javax.swing.JTextField();
         inputIntervaloMorte = new javax.swing.JTextField();
-        inputTempoEspera = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -74,27 +65,18 @@ public class newJFrame extends javax.swing.JFrame {
         areaVivosMortos.setPreferredSize(new java.awt.Dimension(30, 30));
         areaVivosMortos.setLayout(new java.awt.GridLayout(4, 0, 5, 5));
 
-        caraVivo.setBackground(new java.awt.Color(51, 255, 51));
-        caraVivo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        caraVivo.setLayout(new java.awt.GridBagLayout());
-
-        numeroVivo.setText("1");
-        caraVivo.add(numeroVivo, new java.awt.GridBagConstraints());
-
-        areaVivosMortos.add(caraVivo);
-
         labelNumPessoas.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
-        labelNumPessoas.setText("Numero de Pessoas");
+        labelNumPessoas.setText("Numero de Pessoas:");
 
         labelIntervaloMorte.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
-        labelIntervaloMorte.setText("Intervalo de morte");
-
-        labelTempoEspera.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
-        labelTempoEspera.setText("Tempo de espera");
+        labelIntervaloMorte.setText("Intervalo de morte:");
 
         botaoIniciar.setText("Iniciar");
-
-        botaoRecomecar.setText("Recomecar");
+        botaoIniciar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoIniciarActionPerformed(evt);
+            }
+        });
 
         org.jdesktop.layout.GroupLayout grandePainelLayout = new org.jdesktop.layout.GroupLayout(grandePainel);
         grandePainel.setLayout(grandePainelLayout);
@@ -103,49 +85,39 @@ public class newJFrame extends javax.swing.JFrame {
             .add(org.jdesktop.layout.GroupLayout.TRAILING, painelTitulo, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .add(grandePainelLayout.createSequentialGroup()
                 .add(33, 33, 33)
-                .add(grandePainelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
+                .add(grandePainelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                     .add(grandePainelLayout.createSequentialGroup()
-                        .add(grandePainelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(labelNumPessoas)
-                            .add(inputNumPessoas, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 60, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .add(114, 114, 114)
-                        .add(grandePainelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(labelIntervaloMorte)
-                            .add(inputIntervaloMorte, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 60, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .add(114, 114, 114)
-                        .add(grandePainelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(labelTempoEspera)
-                            .add(inputTempoEspera, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 60, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                    .add(grandePainelLayout.createSequentialGroup()
-                        .add(botaoIniciar)
+                        .add(areaVivosMortos, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 690, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(33, Short.MAX_VALUE))
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, grandePainelLayout.createSequentialGroup()
+                        .add(labelNumPessoas)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(botaoRecomecar))
-                    .add(areaVivosMortos, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(33, Short.MAX_VALUE))
+                        .add(inputNumPessoas, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 60, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .add(labelIntervaloMorte)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(inputIntervaloMorte, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 60, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(117, 117, 117))))
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, grandePainelLayout.createSequentialGroup()
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(botaoIniciar)
+                .add(342, 342, 342))
         );
         grandePainelLayout.setVerticalGroup(
             grandePainelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(grandePainelLayout.createSequentialGroup()
                 .add(painelTitulo, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .add(grandePainelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(grandePainelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                        .add(labelIntervaloMorte)
-                        .add(labelTempoEspera))
-                    .add(labelNumPessoas))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(grandePainelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(grandePainelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                        .add(inputNumPessoas, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .add(inputIntervaloMorte, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                    .add(inputTempoEspera, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .add(18, 18, 18)
-                .add(areaVivosMortos, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 182, Short.MAX_VALUE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 20, Short.MAX_VALUE)
                 .add(grandePainelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(botaoIniciar)
-                    .add(botaoRecomecar))
-                .add(30, 30, 30))
+                    .add(labelNumPessoas)
+                    .add(labelIntervaloMorte)
+                    .add(inputNumPessoas, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(inputIntervaloMorte, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(20, 20, 20)
+                .add(areaVivosMortos, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 199, Short.MAX_VALUE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(botaoIniciar)
+                .add(20, 20, 20))
         );
 
         org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(getContentPane());
@@ -161,6 +133,54 @@ public class newJFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void botaoIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoIniciarActionPerformed
+    //Variaveis auxiliares
+        int loop;
+        String auxLoop;
+        Integer atual;
+    //Pega as informacoes dos TextFields
+        String numPessoas = inputNumPessoas.getText();
+        int auxPessoas = Integer.parseInt(numPessoas);
+        String numMorte = inputIntervaloMorte.getText();
+        int auxMorte = Integer.parseInt(numMorte);
+        
+    //Declara o swing do mundo
+        javax.swing.JPanel carinhas[] = new javax.swing.JPanel[auxPessoas];
+        javax.swing.JLabel numeroDoInfeliz[] = new javax.swing.JLabel[auxPessoas];
+        
+        for(loop = 0; loop < auxPessoas; loop++){
+            carinhas[loop] = new javax.swing.JPanel();
+            carinhas[loop].setBackground(new java.awt.Color(51, 255, 51));
+            carinhas[loop].setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+            carinhas[loop].setLayout(new java.awt.GridBagLayout());
+            
+            auxLoop = String.valueOf(loop + 1);
+            numeroDoInfeliz[loop] = new javax.swing.JLabel();
+            numeroDoInfeliz[loop].setText(auxLoop);
+            carinhas[loop].add(numeroDoInfeliz[loop], new java.awt.GridBagConstraints());
+
+            areaVivosMortos.add(carinhas[loop]);
+            
+        }
+        
+        
+    //Declara objeto do algoritmo
+        Josephus jogo = new Josephus(auxPessoas, auxMorte);
+        jogo.criarCenario();  
+	atual = (Integer) jogo.loopJosephus();  //Algoritmo do Josephus
+        
+        //Loop que atualiza o campo do jogo, mostrando o ultimo sobrevivente
+        
+        for(loop = 0; loop < auxPessoas; loop++){
+            if(loop != atual-1){
+                carinhas[loop].setBackground(new java.awt.Color(232, 65, 24));
+                carinhas[loop].setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+                carinhas[loop].setLayout(new java.awt.GridBagLayout());
+            }
+        }
+        
+    }//GEN-LAST:event_botaoIniciarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -200,17 +220,12 @@ public class newJFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel areaVivosMortos;
     private javax.swing.JButton botaoIniciar;
-    private javax.swing.JButton botaoRecomecar;
-    private javax.swing.JPanel caraVivo;
     private javax.swing.JPanel grandePainel;
     private javax.swing.JTextField inputIntervaloMorte;
     private javax.swing.JTextField inputNumPessoas;
-    private javax.swing.JTextField inputTempoEspera;
     private javax.swing.JLabel labelIntervaloMorte;
     private javax.swing.JLabel labelNumPessoas;
-    private javax.swing.JLabel labelTempoEspera;
     private javax.swing.JLabel labelTitulo;
-    private javax.swing.JLabel numeroVivo;
     private javax.swing.JPanel painelTitulo;
     // End of variables declaration//GEN-END:variables
 
